@@ -9,11 +9,11 @@ if (url) {
 	page.open(url, function (s) {
 
 		var title = 'slide',
-			posts,
+			pages,
 			session,
 			fileName;
 
-		posts = page.evaluate(function() {
+		pages = page.evaluate(function() {
 			var item,
 				i,
 				tb = document.querySelectorAll('.to-build');
@@ -32,7 +32,7 @@ if (url) {
 			format: 'A4', orientation: 'landscape', margin: '0px',
 		}
 
-		for(var x = 1; x <= 3; x++) {
+		for(var x = 1; x <= pages; x++) {
 			console.log("- Generating page " + x);
 			fileName = title + "-" +  x + ".pdf";
 			// fileName = title + ".pdf";
