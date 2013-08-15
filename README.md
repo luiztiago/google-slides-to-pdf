@@ -2,8 +2,6 @@
 
 Screen generator from Google Slides to PDF file, using PhantomJS
 
----
-
 ## How to use
 
 1. Install phantom-js
